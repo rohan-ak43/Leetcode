@@ -13,3 +13,20 @@ class Solution(object):
             return True
         else:
             return False 
+
+
+# Solution 2 - Using Hashmap
+class Solution(object):
+    def isAnagram(self, s, t):
+        if len(s)!= len(t):
+            return False
+        hash_1 = {}
+        hash_2 = {}
+        for i in s:
+            hash_1[i] = hash_1.get(i,0) + 1
+        for j in t:
+            hash_2[j] = hash_2.get(j,0) + 1
+        for key in hash_1:
+            if hash_1[key] != hash_2.get(key,0):
+                return False
+        return True
