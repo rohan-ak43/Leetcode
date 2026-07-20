@@ -15,4 +15,3 @@ class Solution(object):
             if com in hashm:
                 return [hashm[com],i]
             hashm[num] = i 
-              
