@@ -12,8 +12,8 @@ A collection of my daily LeetCode problem solutions, written in Python. I practi
 
 ## Goal
 
-- Solve at least one LeetCode problem every day
-- Cover a wide range of topics: Arrays, Strings, Trees, Graphs, DP, and more
-- Improve time and space complexity over time
+- Solve at least one LeetCode problems regularly
+- Cover a wide range of topics: Arrays, Strings, Trees, Graphs, DP, and more.
+- Improve time and space complexity over time.
 
 ---
