@@ -10,3 +10,8 @@ select user_id, max(time_stamp) as last_stamp
 FROM Logins 
 where time_stamp >= '2020-01-01 00:00:00' and time_stamp < '2021-01-01 00:00:00' 
 GROUP BY user_id;
+
+# 182. Duplicate Emails
+select email from Person 
+GROUP BY email 
+having COUNT(EMAIL) > 1;
