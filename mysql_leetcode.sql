@@ -20,3 +20,8 @@ having COUNT(EMAIL) > 1;
 delete p from Person p
 JOIN Person p2
 ON p.email = p2.email AND p.id>p2.id;
+
+# 197. Rising Temperature
+SELECT weather1.id FROM weather weather1, weather weather2
+WHERE DATEDIFF(weather1.recordDate, weather2.recordDate) = 1 
+AND weather1.temperature>weather2.temperature;
