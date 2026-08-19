@@ -15,3 +15,8 @@ GROUP BY user_id;
 select email from Person 
 GROUP BY email 
 having COUNT(EMAIL) > 1;
+
+# 196. Delete Duplicate Emails
+delete p from Person p
+JOIN Person p2
+ON p.email = p2.email AND p.id>p2.id;
