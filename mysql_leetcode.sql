@@ -25,3 +25,9 @@ ON p.email = p2.email AND p.id>p2.id;
 SELECT weather1.id FROM weather weather1, weather weather2
 WHERE DATEDIFF(weather1.recordDate, weather2.recordDate) = 1 
 AND weather1.temperature>weather2.temperature;
+
+# 511. Game Play Analysis I
+SELECT player_id,min(event_date) 
+AS first_login 
+FROM Activity 
+GROUP BY player_id;
