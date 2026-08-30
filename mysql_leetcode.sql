@@ -31,3 +31,8 @@ SELECT player_id,min(event_date)
 AS first_login 
 FROM Activity 
 GROUP BY player_id;
+
+#1050.Actors and Directors Who Cooperated At Least Three Times
+select actor_id, director_id from actordirector 
+group by actor_id, director_id 
+having count(*)>2;
