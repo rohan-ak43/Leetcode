@@ -13,3 +13,12 @@ class Solution(object):
             nums[i] = nums[i] * nums[i]
         nums.sort()
         return nums
+
+# Solution 3
+class Solution(object):
+    def sortedSquares(self, nums):
+        for i in range(len(nums)):
+            sq = nums[i]**2
+            nums[i] = sq
+        nums.sort()
+        return nums
