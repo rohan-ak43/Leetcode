@@ -36,3 +36,6 @@ GROUP BY player_id;
 select actor_id, director_id from actordirector 
 group by actor_id, director_id 
 having count(*)>2;
+
+# 586. Customer Placing the Largest Number of Orders
+select customer_number from orders group by customer_number order by count(*) desc limit 1;
